@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    android:backgroundTint="#ccc"
+    android:layout_margin="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/tv_tenkhoanthu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF2727"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="Tên:"
+                android:layout_marginLeft="10dp"
+                android:padding="8dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_ngaythu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngày:"
+                android:textColor="#FF2727"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:layout_marginLeft="15dp"
+                app:layout_constraintLeft_toRightOf="@id/tv_tenkhoanthu"
+                app:layout_constraintTop_toTopOf="@id/tv_tenkhoanthu"/>
+
+            <TextView
+                android:id="@+id/tv_sotienthu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số tiền:"
+                android:textColor="#FF2727"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:padding="8dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_tenkhoanthu"
+                app:layout_constraintLeft_toLeftOf="@id/tv_tenkhoanthu"/>
+            <TextView
+                android:id="@+id/tv_ghichuthu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ghi chú:"
+                android:textColor="#FF2727"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:padding="8dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_sotienthu"
+                app:layout_constraintLeft_toLeftOf="@id/tv_sotienthu"/>
+            <TextView
+                android:id="@+id/tv_nguoithu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Người thu:"
+                android:textColor="#FF2727"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:padding="8dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_ghichuthu"
+                app:layout_constraintLeft_toLeftOf="@id/tv_ghichuthu"/>
+
+            <ImageView
+                android:id="@+id/img_xoakhoanthu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_delete"
+                app:layout_constraintTop_toBottomOf="@id/img_suakhoanthu"
+                app:layout_constraintRight_toRightOf="@id/img_suakhoanthu"
+                android:layout_marginTop="20dp"/>
+            <ImageView
+                android:id="@+id/img_suakhoanthu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_edit"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_margin="10dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.cardview.widget.CardView>
